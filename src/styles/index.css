@@ -1,0 +1,65 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.parallax {
+  height: 100vh;
+  perspective: 1px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+}
+
+.parallax__layer {
+  transform: translateZ(0.3px) scale(0.7);
+}
+.parallax__layer--back {
+  transform: translateZ(0.2px) scale(0.8);
+}
+.parallax__layer--fore {
+  transform: translateZ(9px);
+}
+.parallax__group {
+  position: relative;
+  height: 100vh;
+  scroll-snap-align: start;
+  padding: 2rem;
+}
+
+li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  font-size: 60px;
+}
+
+ul {
+  margin: 2rem 0;
+  padding: 0;
+}
+
+p,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.horizontal__list {
+  display: flex;
+  flex-direction: row;
+}
+
+.horizontal__list li {
+  margin-right: 0.4rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
