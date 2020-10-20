@@ -128,7 +128,7 @@ function Index({ resp }) {
             />
             <div className="website__info">
               <a
-                href="http://art-retail-tracking.herokuapp.com/home"
+                href="https://art-retail-tracking.herokuapp.com/home"
                 target="_blank"
               >
                 Art Retail Tracker (ART)
