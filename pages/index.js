@@ -229,7 +229,10 @@ function Index({ resp }) {
               ]}
             />
             <div className="website__info">
-              <a href="#" target="_blank">
+              <a
+                href="https://smort-brain-face-detection.herokuapp.com"
+                target="_blank"
+              >
                 Smart Brain
               </a>
 
