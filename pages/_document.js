@@ -5,6 +5,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <meta property="og:title" content="B's Portfolio" key="title" />
           <link
             href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
             rel="stylesheet"
