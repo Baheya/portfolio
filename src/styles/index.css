@@ -29,6 +29,23 @@ html {
   padding: 2rem;
 }
 
+.content--big {
+  font-size: 240px;
+}
+
+.content--small {
+  font-size: 60px;
+}
+
+@media screen and (max-width: 900px) {
+  .content--big {
+    font-size: 200px;
+  }
+  .content--small {
+    font-size: 40px;
+  }
+}
+
 li {
   list-style: none;
   display: flex;

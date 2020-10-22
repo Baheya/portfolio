@@ -73,17 +73,17 @@ function Index({ resp }) {
         />
 
         <p
+          className="content--big"
           style={{
             color: `${secondaryColor}`,
-            fontSize: '240px',
           }}
         >
           Hi!
         </p>
         <p
+          className="content--small"
           style={{
             color: `${secondaryColor}`,
-            fontSize: '60px',
           }}
         >
           My name is Baheya and I'm a fullstack developer based in Dubai, UAE.
