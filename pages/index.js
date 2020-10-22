@@ -87,15 +87,10 @@ function Index({ resp }) {
           }}
         >
           My name is Baheya and I'm a fullstack developer based in Dubai, UAE.
-          You can reach me at khalifa.baheya
-        </p>
-        <p
-          className="content--small"
-          style={{
-            color: `${secondaryColor}`,
-          }}
-        >
-          @gmail.com
+          You can reach me at{' '}
+          <span style={{ wordWrap: 'break-word' }}>
+            khalifa.baheya@gmail.com
+          </span>
         </p>
       </section>
       <section
