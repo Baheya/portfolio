@@ -286,13 +286,10 @@ function Index({ resp }) {
 export async function getServerSideProps() {
   // Fetch data from external API
   const data = { model: 'default' };
-  const res = await fetch(
-    'https://cors-anywhere.herokuapp.com/http://colormind.io/api/',
-    {
-      method: 'POST',
-      body: JSON.stringify(data),
-    }
-  );
+  const res = await fetch('http://colormind.io/api/', {
+    method: 'POST',
+    body: JSON.stringify(data),
+  });
   const resp = await res.json();
 
   // Pass data to the page via props
