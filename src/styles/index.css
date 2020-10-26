@@ -37,15 +37,6 @@ html {
   font-size: 60px;
 }
 
-@media screen and (max-width: 900px) {
-  .content--big {
-    font-size: 200px;
-  }
-  .content--small {
-    font-size: 38px;
-  }
-}
-
 li {
   list-style: none;
   display: flex;
@@ -79,4 +70,16 @@ a {
   display: flex;
   justify-content: center;
   text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  .content--big {
+    font-size: 160px;
+  }
+  .content--small {
+    font-size: 30px;
+  }
+  .parallax__group {
+    padding: 1rem;
+  }
 }
