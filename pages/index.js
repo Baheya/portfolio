@@ -184,7 +184,7 @@ function Index({ resp }) {
               ]}
             />
             <div className="website__info">
-              <a href="#" target="_blank">
+              <a href="https://blog.baheya.dev" target="_blank">
                 Reddit Clone
               </a>
 
@@ -286,10 +286,13 @@ function Index({ resp }) {
 export async function getServerSideProps() {
   // Fetch data from external API
   const data = { model: 'default' };
-  const res = await fetch('http://colormind.io/api/', {
-    method: 'POST',
-    body: JSON.stringify(data),
-  });
+  const res = await fetch(
+    'https://cors-anywhere.herokuapp.com/http://colormind.io/api/',
+    {
+      method: 'POST',
+      body: JSON.stringify(data),
+    }
+  );
   const resp = await res.json();
 
   // Pass data to the page via props
