@@ -7,7 +7,7 @@ class MyDocument extends Document {
         <Head>
           <title>B's Portfolio</title>
           <meta property="og:title" content="B's Portfolio" key="title" />
-          <link rel="icon" href="../public/favicon.ico" />
+          <link rel="icon" href="/public/favicon.ico" />
           <link
             href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
             rel="stylesheet"
@@ -15,23 +15,23 @@ class MyDocument extends Document {
           <link
             rel="apple-touch-icon"
             sizes="180x180"
-            href="../public/apple-touch-icon.png"
+            href="/public/apple-touch-icon.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="32x32"
-            href="../public/favicon-32x32.png"
+            href="/public/favicon-32x32.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="16x16"
-            href="../public/favicon-16x16.png"
+            href="/public/favicon-16x16.png"
           />
           <link
             rel="mask-icon"
-            href="../public/safari-pinned-tab.svg"
+            href="/public/safari-pinned-tab.svg"
             color="#5bbad5"
           />
           <meta name="msapplication-TileColor" content="#da532c" />
