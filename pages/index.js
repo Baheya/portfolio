@@ -134,7 +134,7 @@ function Index({ resp }) {
             />
             <div className="website__info">
               <a
-                href="https://art-retail-tracking.herokuapp.com/home"
+                href="https://github.com/Baheya/art-retail-tracking-api"
                 target="_blank"
               >
                 Art Retail Tracker (ART)
@@ -184,7 +184,7 @@ function Index({ resp }) {
               ]}
             />
             <div className="website__info">
-              <a href="https://blog.baheya.dev" target="_blank">
+              <a href="https://github.com/Baheya/reddit-clone" target="_blank">
                 Reddit Clone
               </a>
 
@@ -232,10 +232,7 @@ function Index({ resp }) {
               ]}
             />
             <div className="website__info">
-              <a
-                href="https://smort-brain-face-detection.herokuapp.com"
-                target="_blank"
-              >
+              <a href="https://github.com/Baheya/smart-brain" target="_blank">
                 Smart Brain
               </a>
 
