@@ -16,25 +16,11 @@ import NodeJSIcon from '../src/components/Icons/NodeJS/NodeJSIcon';
 import PostgreSQLIcon from '../src/components/Icons/PostgreSQL/PostgreSQLIcon';
 import ReduxIcon from '../src/components/Icons/Redux/ReduxIcon';
 import SassIcon from '../src/components/Icons/Sass/SassIcon';
-import {
-  convertToPrimaryColorValues,
-  convertToSecondaryColorValues,
-} from '../src/utils/convertColorCodes';
+import { RGBToHex } from '../src/utils/convertRGBtoHex';
 
 function Index({ resp }) {
-  const [primaryColorValues, setPrimaryColorValues] = useState([
-    '111',
-    '108',
-    '90',
-  ]);
-  const [secondaryColorValues, setsSecondaryColorValues] = useState([
-    '80',
-    '61',
-    '56',
-  ]);
-
-  const primaryColor = `rgb(${primaryColorValues[0]}, ${primaryColorValues[1]}, ${primaryColorValues[2]})`;
-  const secondaryColor = `rgb(${secondaryColorValues[0]}, ${secondaryColorValues[1]}, ${secondaryColorValues[2]})`;
+  const [primaryColor, setPrimaryColor] = useState('#186b73');
+  const [secondaryColor, setsSecondaryColor] = useState('#f7641b');
 
   const refresh = async () => {
     const data = { model: 'default' };
@@ -46,13 +32,14 @@ function Index({ resp }) {
       }
     );
     const resp = await res.json();
-    setPrimaryColorValues(convertToPrimaryColorValues(resp));
-    setsSecondaryColorValues(convertToSecondaryColorValues(resp));
+    setPrimaryColor(RGBToHex(resp.result[0]));
+    setsSecondaryColor(RGBToHex(resp.result[2]));
   };
 
   useEffect(() => {
-    setPrimaryColorValues(convertToPrimaryColorValues(resp));
-    setsSecondaryColorValues(convertToSecondaryColorValues(resp));
+    console.log(resp);
+    setPrimaryColor(RGBToHex(resp.result[0]));
+    setsSecondaryColor(RGBToHex(resp.result[2]));
   }, []);
 
   return (
@@ -63,14 +50,7 @@ function Index({ resp }) {
       }}
     >
       <section className="parallax__group parallax__layer">
-        <RefreshIcon
-          colorValues={[
-            secondaryColorValues[0],
-            secondaryColorValues[1],
-            secondaryColorValues[2],
-          ]}
-          refresh={refresh}
-        />
+        <RefreshIcon colorValue={secondaryColor} refresh={refresh} />
 
         <p
           className="content--big"
@@ -99,14 +79,7 @@ function Index({ resp }) {
           backgroundColor: `${secondaryColor}`,
         }}
       >
-        <RefreshIcon
-          colorValues={[
-            primaryColorValues[0],
-            primaryColorValues[1],
-            primaryColorValues[2],
-          ]}
-          refresh={refresh}
-        />
+        <RefreshIcon colorValue={primaryColor} refresh={refresh} />
 
         {/* <p
           style={{
@@ -125,13 +98,7 @@ function Index({ resp }) {
               color: `${primaryColor}`,
             }}
           >
-            <SparkleIcon
-              primaryColorValues={[
-                primaryColorValues[0],
-                primaryColorValues[1],
-                primaryColorValues[2],
-              ]}
-            />
+            <SparkleIcon colorValue={primaryColor} />
             <div className="website__info">
               <a
                 href="https://github.com/Baheya/art-retail-tracking-api"
@@ -176,13 +143,7 @@ function Index({ resp }) {
               color: `${primaryColor}`,
             }}
           >
-            <SparkleIcon
-              primaryColorValues={[
-                primaryColorValues[0],
-                primaryColorValues[1],
-                primaryColorValues[2],
-              ]}
-            />
+            <SparkleIcon colorValue={primaryColor} />
             <div className="website__info">
               <a href="https://github.com/Baheya/reddit-clone" target="_blank">
                 Reddit Clone
@@ -224,13 +185,7 @@ function Index({ resp }) {
               color: `${primaryColor}`,
             }}
           >
-            <SparkleIcon
-              primaryColorValues={[
-                primaryColorValues[0],
-                primaryColorValues[1],
-                primaryColorValues[2],
-              ]}
-            />
+            <SparkleIcon colorValue={primaryColor} />
             <div className="website__info">
               <a href="https://github.com/Baheya/smart-brain" target="_blank">
                 Smart Brain
