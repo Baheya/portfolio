@@ -2,7 +2,7 @@ const SparkleIcon = (props) => {
   return (
     <div
       style={{
-        color: `rgb(${props.primaryColorValues[0]}, ${props.primaryColorValues[1]}, ${props.primaryColorValues[2]})`,
+        color: `${props.primaryColorValue}`,
 
         zIndex: '3',
         width: '20px',

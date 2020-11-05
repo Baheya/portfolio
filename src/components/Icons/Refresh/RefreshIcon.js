@@ -2,7 +2,7 @@ const RefreshIcon = (props) => {
   return (
     <div
       style={{
-        color: `rgb(${props.colorValues[0]}, ${props.colorValues[1]}, ${props.colorValues[2]})`,
+        color: `${props.colorValue}`,
         zIndex: '3',
         width: '40px',
         height: '40px',
