@@ -103,6 +103,7 @@ function Index({ resp }) {
               <a
                 href="https://github.com/Baheya/art-retail-tracking-api"
                 target="_blank"
+                rel="noreferrer"
               >
                 Art Retail Tracker (ART)
               </a>
@@ -145,7 +146,11 @@ function Index({ resp }) {
           >
             <SparkleIcon colorValue={primaryColor} />
             <div className="website__info">
-              <a href="https://github.com/Baheya/reddit-clone" target="_blank">
+              <a
+                href="https://github.com/Baheya/reddit-clone"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Reddit Clone
               </a>
 
@@ -187,7 +192,11 @@ function Index({ resp }) {
           >
             <SparkleIcon colorValue={primaryColor} />
             <div className="website__info">
-              <a href="https://github.com/Baheya/smart-brain" target="_blank">
+              <a
+                href="https://github.com/Baheya/smart-brain"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Smart Brain
               </a>
 
