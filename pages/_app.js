@@ -7,6 +7,10 @@ function App({ Component, pageProps }) {
       <Head>
         <title>B's Portfolio</title>
         <meta property="og:title" content="B's Portfolio" key="title" />
+        <meta
+          name="description"
+          content="A colorful, but minimalistic portfolio developed by Baheya Khalifa, to showcase her fullstack web applications."
+        />
       </Head>
       <Component {...pageProps} />
     </>
