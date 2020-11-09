@@ -7,6 +7,7 @@ class MyDocument extends Document {
         <Head>
           <link rel="icon" href="/favicon.ico" />
           <link
+            rel="prefetch"
             href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
             rel="stylesheet"
           />
