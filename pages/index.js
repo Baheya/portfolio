@@ -36,12 +36,6 @@ function Index({ resp }) {
     setsSecondaryColor(RGBToHex(resp.result[2]));
   };
 
-  useEffect(() => {
-    console.log(resp);
-    setPrimaryColor(RGBToHex(resp.result[0]));
-    setsSecondaryColor(RGBToHex(resp.result[2]));
-  }, []);
-
   return (
     <main
       className="parallax"
